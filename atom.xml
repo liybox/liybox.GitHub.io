@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liybox.github.io/"/>
-  <updated>2019-08-03T13:52:20.942Z</updated>
+  <updated>2019-08-03T13:59:08.886Z</updated>
   <id>https://liybox.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>最新hexo+github搭建个人博客详细教程（一）</title>
     <link href="https://liybox.github.io/2019/08/03/%E6%9C%80%E6%96%B0hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>https://liybox.github.io/2019/08/03/最新hexo-github搭建个人博客详细教程（一）/</id>
-    <published>2019-08-03T13:44:46.799Z</published>
-    <updated>2019-08-03T13:52:20.942Z</updated>
+    <published>2019-08-03T13:44:46.000Z</published>
+    <updated>2019-08-03T13:59:08.886Z</updated>
     
     <summary type="html">
     
@@ -29,12 +29,16 @@
       
         
         
-          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;这是作者自己搭建博客的整个过程，想给自己做一个记录，同时让大家避免很多的坑。&lt;br&gt;本人博客：&lt;a
         
       
     
     </summary>
     
+      <category term="hexo" scheme="https://liybox.github.io/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://liybox.github.io/tags/hexo/"/>
     
   </entry>
   
