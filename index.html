@@ -297,6 +297,186 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liybox.github.io/2019/08/03/最新hexo-github搭建个人博客详细教程（一）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="希望星选工作室——liybox">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/blog_logo.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="希望星选的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/03/最新hexo-github搭建个人博客详细教程（一）/" itemprop="url">未命名</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-03T21:44:46+08:00">
+                2019-08-03
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-03T21:52:20+08:00">
+                2019-08-03
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+		  
+		  
+
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 最新hexo+github搭建个人博客详细教程（一）</span><br><span class="line">date: 2019-08-03 21:44:46</span><br><span class="line">tags: hexo</span><br><span class="line">categories: hexo</span><br></pre></td></tr></table></figure>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这是作者自己搭建博客的整个过程，想给自己做一个记录，同时让大家避免很多的坑。<br>本人博客：<a href="http://liybox.top" target="_blank" rel="noopener">http://liybox.top</a><br>这是最终状态，我已经添加了域名，大家可以直接登录GitHub提供的地址就可以了。</p>
+<h1 id="一，准备工作"><a href="#一，准备工作" class="headerlink" title="一，准备工作"></a>一，准备工作</h1><p>本人所使用的环境：  windows10<br>时间：  2019/8/3</p>
+<h2 id="1-注册Github账号及创建仓库"><a href="#1-注册Github账号及创建仓库" class="headerlink" title="1. 注册Github账号及创建仓库"></a>1. 注册Github账号及创建仓库</h2><p>首先我们去注册GitHub：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> </p>
+<p><img src="https://s2.ax1x.com/2019/08/03/erck2n.png" alt="你想要输入的替代文字"></p>
+<p>然后点击“ 在我们的GitHub上面右上角的New repository ”来创建一个仓库。 去新建一个名为你的用户名的仓库，格式：your_username.github.io，比如说，如果你的github用户名是xwxx，那么你就新建xwxx.github.io的仓库（必须是你的用户名，其它名称无效），将来你的网站访问地址就是 <a href="http://xwxx.github.io" target="_blank" rel="noopener">http://xwxx.github.io</a> </p>
+<p>而且每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。</p>
+<h2 id="2-安装Git及配置"><a href="#2-安装Git及配置" class="headerlink" title="2. 安装Git及配置"></a>2. 安装Git及配置</h2><h3 id="Git的安装："><a href="#Git的安装：" class="headerlink" title="Git的安装："></a>Git的安装：</h3><p>下载地址：<a href="https://gitforwindows.org/" target="_blank" rel="noopener">https://gitforwindows.org/</a></p>
+<p>下载之后，双击安装，直接默认安装就可以了。<br>安装完Git后，在命令行输入git –version，如果出现版本号就说明安装成功了。</p>
+<h3 id="配置Git参数："><a href="#配置Git参数：" class="headerlink" title="配置Git参数："></a>配置Git参数：</h3><p>我们首先要需要配置本地Git的参数，右键一个文件夹，然后选择Git Bash，打开Bash窗口，然后我们来设置Git的姓名和邮箱：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;liybox&quot;// 引号里填写你的github用户名，非昵称</span><br><span class="line">$ git config --global user.email &quot;xxx@qq.com&quot;// 引号里填写填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加SSH-Key"><a href="#添加SSH-Key" class="headerlink" title="添加SSH Key"></a>添加SSH Key</h3><p>为了把本地的仓库中的内容传输到GitHub上，需要配置ssh key，无论是上传自己的博客还是上传其他的仓库都需要连接Github，ssh key是一个token，作用是身份验证。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后连续3次回车（中间可能会遇到输入yes就可以了），最终会生成一个文件在用户目录下（默认目录是：C:\users\sun.ssh），打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容：<br><img src="https://s2.ax1x.com/2019/08/03/erHfBQ.png" alt="你想要输入的替代文字"><br>然后打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：<br><img src="https://s2.ax1x.com/2019/08/03/erbS41.png" alt="你想要输入的替代文字"><br>title随便填就可以了。<br>SSH key添加之后，就可以在本机git bash中进行测试，输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>（直接复制就可以了，邮箱地址不用改）进行测试，返回Hi username ！You’ve successfully ……说明你已经成功啦！</p>
+<h2 id="3-安装node-js"><a href="#3-安装node-js" class="headerlink" title="3. 安装node.js"></a>3. 安装node.js</h2><p>node.js下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a><br>同样，下载之后，双击安装，直接默认安装就可以了。</p>
+<h1 id="二，本地博客的配置"><a href="#二，本地博客的配置" class="headerlink" title="二，本地博客的配置"></a>二，本地博客的配置</h1><h2 id="1-安装hexo"><a href="#1-安装hexo" class="headerlink" title="1. 安装hexo"></a>1. 安装hexo</h2><p>首先要注意，此后的所有操作应该是在git bash中进行的，上文中也有一些是在git bash中执行。<br>在电脑的随意磁盘下新建文件夹，点击鼠标右键，再点击git bash，然后输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+
+<p>这是hexo的安装文件夹。大家可以输入：hexo -v   ，如果出现版本号就是安装成功。</p>
+<h2 id="2-hexo的初始化"><a href="#2-hexo的初始化" class="headerlink" title="2. hexo的初始化"></a>2. hexo的初始化</h2><p>在电脑的某个地方新建一个名为blog的文件夹（名字可以随便取），由于这个文件夹将来就作为你存放代码的地方，所以最好不要随便放。<br>然后进入文件夹，打开Bash窗口，输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>hexo会自动下载一些文件到这个目录，包括node_modules，目录结构如下图：</p>
+<p><img src="https://s2.ax1x.com/2019/08/03/erOMgx.png" alt="你想要输入的替代文字"><br>注意：<br>如果在初始化过程中非常慢，甚至卡住。看以下解决办法：<br>只需要在windos下利用cmd,ping github.com。只要收到github站点的反馈，重启git bash，再进行hexo init就可以顺利进行。<br>如果你的丢包100%可以尝试以下解决办法：<br><a href="http://www.jianshu.com/p/6a7df3a75673" target="_blank" rel="noopener">http://www.jianshu.com/p/6a7df3a75673</a></p>
+<p>初始化结束以后，我们输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g # 生成</span><br><span class="line">$ hexo s # 启动服务</span><br></pre></td></tr></table></figure>
+
+<p>hexo s是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到内容，很多人会碰到浏览器一直在转圈但是就是加载不出来的问题，一般情况下是因为端口占用的缘故，因为4000这个端口太常见了，解决方法：<br>我们切换一个新的空闲的端口，输入命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure>
+
+<p>5000这个端口号可以根据个人情况切换</p>
+<p>如果没有报错，那么打开浏览器，输入地址：localhost:4000，便可看到下面的界面，说明我们的hexo服务端基本配置已经完成了。</p>
+<p><img src="https://s2.ax1x.com/2019/08/03/erjWuV.png" alt="你想要输入的替代文字"></p>
+<h1 id="三，部署到github上"><a href="#三，部署到github上" class="headerlink" title="三，部署到github上"></a>三，部署到github上</h1><p>输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
+<p>把本地做好的传到仓库去就可以了。</p>
+<h2 id="常用hexo命令"><a href="#常用hexo命令" class="headerlink" title="常用hexo命令"></a>常用hexo命令</h2><p>常见命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br><span class="line">缩写：</span><br><span class="line"></span><br><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br><span class="line">组合命令：</span><br><span class="line"></span><br><span class="line">hexo s -g #生成并本地预览</span><br><span class="line">hexo d -g #生成并上传</span><br></pre></td></tr></table></figure>
+
+<p><strong>搭建完可以看到，初始化的界面很丑，关注下篇文章进行hexo的美化。</strong></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+<div>
+  
+</div>
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://liybox.github.io/2019/07/27/申请OneDrive网盘5T空间教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1147,7 +1327,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1158,7 +1338,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1169,7 +1349,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
