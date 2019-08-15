@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liybox.github.io/"/>
-  <updated>2019-08-10T02:47:51.218Z</updated>
+  <updated>2019-08-15T03:05:01.732Z</updated>
   <id>https://liybox.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python的基础教程——python的准备工作</title>
+    <link href="https://liybox.github.io/2019/08/15/pythonjc2/"/>
+    <id>https://liybox.github.io/2019/08/15/pythonjc2/</id>
+    <published>2019-08-15T02:49:11.000Z</published>
+    <updated>2019-08-15T03:05:01.732Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;对于我们菜鸟来说，开发环境的选择非常重要，一般Python的开发环境选择Linux。&lt;br&gt;Python2.x与Python3.x有着很大程度上的不兼容性，但是毕竟随着Python的不断发展，Python3.x才是未来的主流，所以我们选择安装Python3.x的环境。&lt;/p
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://liybox.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://liybox.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python学习之路——为什么选择python</title>
+    <link href="https://liybox.github.io/2019/08/15/pythonjc1/"/>
+    <id>https://liybox.github.io/2019/08/15/pythonjc1/</id>
+    <published>2019-08-15T02:46:54.000Z</published>
+    <updated>2019-08-15T03:03:53.311Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、我为什么选择Python&quot;&gt;&lt;a href=&quot;#一、我为什么选择Python&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://liybox.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://liybox.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>最新hexo+github搭建个人博客详细教程（二）——关于博客的美化</title>
